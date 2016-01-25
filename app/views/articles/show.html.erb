@@ -1,18 +1,29 @@
+<div class="container">
+	
 <p>
-  <strong>Title:</strong>
+	<h2>
+  <strong>Title:</strong></br>
+  </h2>
   <%= @article.title %>
+</p>
+
+<p>
+	<%= image_tag(@article.picture_url, :width => 600) if @article.picture.present? %>
 </p>
  
 <p>
+	<h2>
   <strong>Text:</strong>
+</h2>
   <%= @article.text %>
 </p>
  
-<h2>Comments</h2>
+<h3>Comments</h3>
 <%= render @article.comments %>
  
-<h2>Add a comment:</h2>
+<h3>Add a comment:</h3>
 <%= render 'comments/form' %>
  
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'All Articles', articles_path %>
+<%= link_to '<button type="button" class="btn btn-primary">Edit</button>'.html_safe, edit_article_path(@article) %>
+<%= link_to '<button type="button" class="btn btn-primary">All Articles</button>'.html_safe, articles_path %>
+</div>
