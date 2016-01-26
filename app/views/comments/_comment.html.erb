@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
   <strong>Commenter:</strong>
   <%= comment.commenter %>
 </p>
@@ -6,10 +6,25 @@
 <p>
   <strong>Comment:</strong>
   <%= comment.body %>
-</p>
+</p> -->
 
-<p>
-  <%= link_to '<button type="button" class="btn btn-primary">Delete Comment</button>'.html_safe, [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
+<div class="row">
+	<div class="col-md-10 panel-primary">
+		<div class="content-box-header panel-heading">
+			<div class="panel-title"><%= comment.commenter %>  </a></div>
+		</div>
+		<div class="content-box-large box-with-header">
+			<%= comment.body %>
+			<br><br>
+			<p>
+				<%= link_to '<button type="button" class="btn btn-primary">Delete Comment</button>'.html_safe, [comment.article, comment],
+				method: :delete,
+				data: { confirm: 'Are you sure?' } %>
+
+				
+			</p>
+		</div>
+		
+	</div>
+</div>
+

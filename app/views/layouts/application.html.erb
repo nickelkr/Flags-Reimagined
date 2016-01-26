@@ -5,46 +5,33 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-      <!-- Bootstrap Core CSS -->
-   <%= stylesheet_link_tag "bootstrap.min"%>
 
-    <!-- Custom CSS -->
-    <%= stylesheet_link_tag "modern-business"%>
+  <%= stylesheet_link_tag "bootstrap.min"%>
+  <%= stylesheet_link_tag "modern-business"%>
+  <%= stylesheet_link_tag "font-awesome.min"%>
+  <%= stylesheet_link_tag "style"%>
+  <%= stylesheet_link_tag "bootstrap-theme.min"%>
+  <%= stylesheet_link_tag "stats"%>
+  <%= stylesheet_link_tag "forms"%>
+  <%= stylesheet_link_tag "calendar"%>
+  <%= stylesheet_link_tag "buttons"%>
+  <%= stylesheet_link_tag "styles"%>
 
-    <!-- Custom Fonts -->
-    <%= stylesheet_link_tag "font-awesome.min"%>
-
-   <%= stylesheet_link_tag "style"%>
-
-       <!-- jQuery -->
-   <%= javascript_include_tag"jquery"%>
-
-    <!-- Bootstrap Core JavaScript -->
+  <%= javascript_include_tag"calendar"%>
+  <%= javascript_include_tag"custom"%>
+  <%= javascript_include_tag"editors"%>
+  <%= javascript_include_tag"forms"%>
+  <%= javascript_include_tag"stats"%>
+  <%= javascript_include_tag"tables"%>
+  <%= javascript_include_tag "jquery"%>
   <%= javascript_include_tag"bootstrap.min"%>
 
-
-
-<%= stylesheet_link_tag "bootstrap-theme.min"%>
-<%= stylesheet_link_tag "stats"%>
-<%= stylesheet_link_tag "forms"%>
-<%= stylesheet_link_tag "calendar"%>
-<%= stylesheet_link_tag "buttons"%>
-<%= stylesheet_link_tag "styles"%>
-
-
-<%= javascript_include_tag"calendar"%>
-<%= javascript_include_tag"custom"%>
-<%= javascript_include_tag"editors"%>
-<%= javascript_include_tag"forms"%>
-<%= javascript_include_tag"stats"%>
-<%= javascript_include_tag"tables"%>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
