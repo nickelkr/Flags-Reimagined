@@ -21,6 +21,8 @@
 				method: :delete,
 				data: { confirm: 'Are you sure?' } %>
 
+				<%= link_to '<button type="button" class="btn btn-primary">Edit Comment</button>'.html_safe, edit_article_comment_path(comment, @article) %>
+
 				
 			</p>
 		</div>
