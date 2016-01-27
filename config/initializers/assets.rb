@@ -18,7 +18,6 @@ Rails.application.config.assets.precompile += %w( buttons.css )
 Rails.application.config.assets.precompile += %w( calendar.css )
 Rails.application.config.assets.precompile += %w( forms.css )
 Rails.application.config.assets.precompile += %w( stats.css )
-Rails.application.config.assets.precompile += %w( styles.css )
 
 Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w( jquery.js )
