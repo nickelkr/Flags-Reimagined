@@ -1,3 +1,4 @@
+
 <% builds =  @comment ? [@article, @comment] : [@article, @article.comments.build] %>
 
 <%= form_for(builds) do |f| %>
