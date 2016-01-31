@@ -1,6 +1,6 @@
 class Article < ActiveRecord::Base
-	mount_uploader :picture, PictureUploader
+	belongs_to :city
 	has_many :comments, dependent: :destroy
-  	validates :title, presence: true, length: { minimum: 5 }
+  	validates :title, presence: true, length: { minimum: 1 }
 
 end

@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   get "/pages/:page" => "pages#show"
   get 'welcome/index'
 
-
+resources :cities do
+  resources :articles
+end
   resources :articles do
     resources :comments
   end
